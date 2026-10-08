@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What chunk size and token overlap are used in the document ingestion pipeline?",
+    "answer": "Documents are chunked between 500 and 800 tokens with a 100-token sliding overlap using tiktoken cl100k_base encoding."
+  },
+  {
+    "question": "Why does the retrieval architecture combine BM25 with dense vector search?",
+    "answer": "Dense vector search captures semantic intent and paraphrased queries, while BM25 sparse lexical search indexes exact domain terminology, code identifiers, and acronyms."
+  },
+  {
+    "question": "What model is used for cross-encoder re-ranking and what advantage does it provide?",
+    "answer": "Cohere rerank-english-v3.0 is used for cross-encoder re-ranking. Cross-encoders attend across both query and document tokens simultaneously, achieving significantly higher precision than bi-encoder cosine similarities alone."
+  },
+  {
+    "question": "What does the LLM respond when the retrieved context is insufficient?",
+    "answer": "The system explicitly states: 'I cannot answer this question based on the provided context.' Guessing or using outside knowledge is prohibited."
+  },
+  {
+    "question": "What is the minimum faithfulness threshold required by CI/CD before a pull request fails?",
+    "answer": "A pull request is automatically rejected if the mean faithfulness score falls below the 0.80 threshold."
+  }
+]

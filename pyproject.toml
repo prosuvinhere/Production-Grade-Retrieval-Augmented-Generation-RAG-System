@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "production-rag-system"
+version = "0.1.0"
+description = "Production-Grade Retrieval-Augmented Generation (RAG) System with Hybrid Search, Cohere Reranking, Strict Citation Enforcement, and Ragas CI/CD Evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "AI Engineering Team"}
+]
+dependencies = [
+    "langchain>=0.2.0",
+    "langchain-community>=0.2.0",
+    "langchain-core>=0.2.0",
+    "langchain-openai>=0.1.7",
+    "langchain-chroma>=0.1.0",
+    "chromadb>=0.5.0",
+    "rank_bm25>=0.2.2",
+    "cohere>=5.5.0",
+    "sentence-transformers>=3.0.0",
+    "ragas>=0.1.9",
+    "datasets>=2.19.0",
+    "pypdf>=4.2.0",
+    "tiktoken>=0.7.0",
+    "pyyaml>=6.0.1",
+    "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-mock>=3.14.0",
+    "ruff>=0.4.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+pythonpath = [
+    ".",
+    "src"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
