@@ -1,6 +1,6 @@
 # 🚀 Production-Grade Retrieval-Augmented Generation (RAG) System
 
-[![CI & RAG Quality Gate](https://github.com/your-username/production-rag-system/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/production-rag-system/actions)
+[![CI & RAG Quality Gate](https://github.com/prosuvinhere/Production-Grade-Retrieval-Augmented-Generation-RAG-System/actions/workflows/ci.yml/badge.svg)](https://github.com/prosuvinhere/Production-Grade-Retrieval-Augmented-Generation-RAG-System/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.11-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![LangChain](https://img.shields.io/badge/Orchestration-LangChain-green.svg)](https://www.langchain.com/)
@@ -120,8 +120,8 @@ flowchart TD
 ### 1. Clone & Set Up Environment
 
 ```bash
-git clone https://github.com/your-username/production-rag-system.git
-cd production-rag-system
+git clone https://github.com/prosuvinhere/Production-Grade-Retrieval-Augmented-Generation-RAG-System.git
+cd Production-Grade-Retrieval-Augmented-Generation-RAG-System
 
 # Create virtual environment
 python3 -m venv .venv
